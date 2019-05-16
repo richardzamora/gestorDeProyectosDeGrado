@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{18B5F522-B47D-4F8F-BE19-687B158EC2F7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TrabajosDeGrado</RootNamespace>
+    <AssemblyName>TrabajosDeGrado</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mundo\personas\AuxAdministrativo.cs" />
+    <Compile Include="interfazGrafica\auxAdmin\AuxAsignarJurados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxAsignarJurados.Designer.cs">
+      <DependentUpon>AuxAsignarJurados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxRegistrarProrroga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxRegistrarProrroga.Designer.cs">
+      <DependentUpon>AuxRegistrarProrroga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxRegistrarPropuesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxRegistrarPropuesta.Designer.cs">
+      <DependentUpon>AuxRegistrarPropuesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mundo\documentos\DocumentoOficial.cs" />
+    <Compile Include="mundo\documentos\DocumentoProrroga.cs" />
+    <Compile Include="mundo\documentos\DocumentoFinal.cs" />
+    <Compile Include="interfazGrafica\estudiante\EstudianteDocFinal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudianteDocFinal.Designer.cs">
+      <DependentUpon>EstudianteDocFinal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudianteEstado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudianteEstado.Designer.cs">
+      <DependentUpon>EstudianteEstado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mundo\personas\Estudiante.cs" />
+    <Compile Include="mundo\personas\Jurado.cs" />
+    <Compile Include="interfazGrafica\auxAdmin\AuxPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\auxAdmin\AuxPrincipal.Designer.cs">
+      <DependentUpon>AuxPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudiantePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudiantePrincipal.Designer.cs">
+      <DependentUpon>EstudiantePrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\jurado\JuradoConsultarTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\jurado\JuradoConsultarTrabajo.Designer.cs">
+      <DependentUpon>JuradoConsultarTrabajo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\jurado\JuradoPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\jurado\JuradoPrincipal.Designer.cs">
+      <DependentUpon>JuradoPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudiantePropuesta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudiantePropuesta.Designer.cs">
+      <DependentUpon>EstudiantePropuesta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudianteProrroga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\estudiante\EstudianteProrroga.Designer.cs">
+      <DependentUpon>EstudianteProrroga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="interfazGrafica\Seleccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="interfazGrafica\Seleccion.Designer.cs">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mundo\personas\Usuario.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="mundo\documentos\DocumentoPropuesta.cs" />
+    <Compile Include="mundo\servicios\SistemaDeInformacion.cs" />
+    <Compile Include="mundo\servicios\TrabajoDeGrado.cs" />
+    <EmbeddedResource Include="interfazGrafica\auxAdmin\AuxAsignarJurados.resx">
+      <DependentUpon>AuxAsignarJurados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\auxAdmin\AuxRegistrarPropuesta.resx">
+      <DependentUpon>AuxRegistrarPropuesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\auxAdmin\AuxRegistrarProrroga.resx">
+      <DependentUpon>AuxRegistrarProrroga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\estudiante\EstudianteDocFinal.resx">
+      <DependentUpon>EstudianteDocFinal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\auxAdmin\AuxPrincipal.resx">
+      <DependentUpon>AuxPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\estudiante\EstudianteEstado.resx">
+      <DependentUpon>EstudianteEstado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\estudiante\EstudiantePrincipal.resx">
+      <DependentUpon>EstudiantePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\jurado\JuradoConsultarTrabajo.resx">
+      <DependentUpon>JuradoConsultarTrabajo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\jurado\JuradoPrincipal.resx">
+      <DependentUpon>JuradoPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="interfazGrafica\estudiante\EstudiantePropuesta.resx">
+      <DependentUpon>EstudiantePropuesta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\estudiante\EstudianteProrroga.resx">
+      <DependentUpon>EstudianteProrroga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="interfazGrafica\Seleccion.resx">
+      <DependentUpon>Seleccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Unibague_ESCUDO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uniibague-300x259.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

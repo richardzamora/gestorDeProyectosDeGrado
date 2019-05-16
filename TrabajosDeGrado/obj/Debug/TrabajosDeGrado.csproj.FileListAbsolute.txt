@@ -1,0 +1,123 @@
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxMulta.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarFecha.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoCalificacion.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+C:\Users\Daniela\Documents\TrabajoGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
+C:\Users\Daniel González\Documents\Visual Studio 2015\Projects\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxAsignarJurados.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxAsignarJurados.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.CoreCompileInputs.cache
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+C:\Users\Vanesa\Desktop\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxAsignarJurados.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+D:\Users\DANIELA\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxAsignarJurados.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+C:\Users\danie\Documents\Universidad\7 Semestre\Septimo Semestre\Ingenieria de Software\TrabajoFinalSoftware1\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe.config
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.exe
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.pdb
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.exe
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\bin\Debug\TrabajosDeGrado.pdb
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csprojResolveAssemblyReference.cache
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxAsignarJurados.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarPropuesta.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxRegistrarProrroga.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteDocFinal.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.AuxPrincipal.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteEstado.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePrincipal.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoConsultarTrabajo.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.JuradoPrincipal.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Properties.Resources.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudiantePropuesta.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.EstudianteProrroga.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.Seleccion.resources
+C:\Users\Richard\escritorio\2220171018\QuintoSemestre\Ing. de software\TrabajosDeGrado\TrabajosDeGrado\TrabajosDeGrado\obj\Debug\TrabajosDeGrado.csproj.GenerateResource.Cache
