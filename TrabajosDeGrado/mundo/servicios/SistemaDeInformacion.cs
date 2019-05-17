@@ -121,7 +121,7 @@ namespace TrabajosDeGrado
 
         public void crearDocumentoPropuesta(Estudiante e, String titulo, String ruta, String modalidad, DateTime fecha)
         {
-            DocumentoPropuesta dp = new DocumentoPropuesta(fecha, fecha.AddDays(20),ruta);
+            DocumentoPropuesta dp = new DocumentoPropuesta(fecha.ToString(), ruta,fecha, fecha.AddDays(20));
             TrabajoDeGrado tg = new TrabajoDeGrado(e,titulo, fecha, modalidad, dp);
             listaTrabajosDeGrado.Add(tg);
            
@@ -129,7 +129,7 @@ namespace TrabajosDeGrado
 
         public void crearDocumentoFinal(Estudiante e, String titulo, String ruta, String modalidad, DateTime fecha)
         {
-            DocumentoFinal dp = new DocumentoFinal(fecha,ruta);
+            DocumentoFinal dp = new DocumentoFinal(fecha.ToString(), ruta, fecha, fecha);
             TrabajoDeGrado tg = buscarTrabajoDeGrado(e);
             tg.DocumentosFinales.Add(dp);
             tg.entregarDocumentoFinal();
@@ -138,7 +138,7 @@ namespace TrabajosDeGrado
 
         public void crearDocumentoProrroga(Estudiante e, String titulo, String ruta, String modalidad, DateTime fecha)
         {
-            DocumentoProrroga dp = new DocumentoProrroga(fecha, ruta);
+            DocumentoProrroga dp = new DocumentoProrroga(fecha.ToString(), ruta, fecha, fecha);
             TrabajoDeGrado tg = buscarTrabajoDeGrado(e);
             tg.DocumentosProrroga = dp;
             

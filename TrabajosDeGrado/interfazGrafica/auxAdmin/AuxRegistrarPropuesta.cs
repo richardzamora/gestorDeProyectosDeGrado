@@ -34,7 +34,7 @@ namespace TrabajosDeGrado
             {
                 if (tdg[i].DocumentosPropuesta.Count > 0 && tdg[i].DocumentosFinales.Count ==0)
                 {
-                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosPropuesta.Last<DocumentoPropuesta>().FechaLimiteEntregaResultado);
+                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosPropuesta.Last<DocumentoPropuesta>().fechaFinal);
                 }
             }
         }

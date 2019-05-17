@@ -7,7 +7,7 @@ using TrabajosDeGrado.mundo.personas;
 
 namespace TrabajosDeGrado
 {
-    public class Estudiante : Usuario
+    public class Estudiante : IUsuario
     {
  
         private int semestre;
@@ -82,8 +82,5 @@ namespace TrabajosDeGrado
             multa = pMulta;
             
         }
-
-  
     }
-
 }

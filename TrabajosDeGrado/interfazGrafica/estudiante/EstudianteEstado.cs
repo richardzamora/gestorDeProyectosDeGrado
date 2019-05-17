@@ -32,26 +32,26 @@ namespace TrabajosDeGrado
 
             for (int i = 0; i < propuestas.Count; i++)
             {
-                if(propuestas[i].Respuesta == null)
+                if(propuestas[i].respuesta == null)
                 {
-                    dgvTabla.Rows.Add("Propuesta", propuestas[i].Fecha,"Sin aprobar");
+                    dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio,"Sin aprobar");
                 }
                 else
                 {
-                    dgvTabla.Rows.Add("Propuesta", propuestas[i].Fecha, propuestas[i].Respuesta.RutaArchivo);
+                    dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio, propuestas[i].respuesta.RutaArchivo);
                 }
                     
             }
 
             for (int i = 0; i < finales.Count; i++)
             {
-                if (finales[i].ArchivoEvaluacion == null)
+                if (finales[i].archivoEvaluacion == null)
                 {
-                    dgvTabla.Rows.Add("Trabajo Final", finales[i].FechaEntrega, "Sin evaluar");
+                    dgvTabla.Rows.Add("Trabajo Final", finales[i].fechaFinal, "Sin evaluar");
                 }
                 else
                 {
-                    dgvTabla.Rows.Add("Trabajo Final", finales[i].FechaEntrega, finales[i].ArchivoEvaluacion.RutaArchivo);
+                    dgvTabla.Rows.Add("Trabajo Final", finales[i].fechaFinal, finales[i].archivoEvaluacion.RutaArchivo);
                 }
                 
             }

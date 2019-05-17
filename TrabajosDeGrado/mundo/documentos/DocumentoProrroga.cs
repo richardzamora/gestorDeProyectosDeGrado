@@ -3,50 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabajosDeGrado.mundo.documentos;
 
 namespace TrabajosDeGrado
 {
-    public class DocumentoProrroga
+    public class DocumentoProrroga : IDocumento
     {
-        DateTime fechaEntrega;
-        private String rutaArchivo;
 
-        public DocumentoProrroga(DateTime fecha, String pRutaArchivo)
+        public DocumentoProrroga(string pCodigo, string pRuta, DateTime pFechaInicio, DateTime pFechaFinal)
+            : base(pCodigo, pRuta, pFechaInicio, pFechaFinal)
         {
-            this.fechaEntrega = fecha;
-            rutaArchivo = pRutaArchivo;
+            
         }
-              
-
-        #region getters and setters
-
-        public string RutaArchivo
-        {
-            get
-            {
-                return rutaArchivo;
-            }
-
-            set
-            {
-                rutaArchivo = value;
-            }
-        }
-
-        public DateTime FechaEntrega
-        {
-            get
-            {
-                return fechaEntrega;
-            }
-
-            set
-            {
-                fechaEntrega = value;
-            }
-        }
-        #endregion
-
-
     }
 }

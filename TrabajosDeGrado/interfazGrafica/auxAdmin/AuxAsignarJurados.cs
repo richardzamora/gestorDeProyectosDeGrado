@@ -40,7 +40,7 @@ namespace TrabajosDeGrado
             {
                 if (tdg[i].DocumentosFinales.Count>0)
                 {
-                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosProrroga.FechaEntrega);
+                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosProrroga.fechaFinal);
                 }
             }
         }

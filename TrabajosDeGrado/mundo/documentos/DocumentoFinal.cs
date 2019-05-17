@@ -3,65 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TrabajosDeGrado.mundo.documentos;
 
 namespace TrabajosDeGrado
 {
-    public class DocumentoFinal
+    public class DocumentoFinal : IDocumento
     {
-        
-        private DateTime fechaEntrega;
-        private DateTime fechaEvaluacion;
-        private String rutaArchivo;
-        private DocumentoOficial archivoEvaluacion;
-        
-        public DocumentoFinal(DateTime fecha, String pRutaArchivo)
+        private DocumentoOficial _archivoEvaluacion;
+        public DocumentoFinal(string pCodigo, string pRuta, DateTime pFechaInicio, DateTime pFechaFinal)
+            : base(pCodigo, pRuta, pFechaInicio, pFechaFinal)
         {
-            this.fechaEntrega = fecha;
-            fechaEvaluacion = fecha.AddDays(20);
-            rutaArchivo = pRutaArchivo;
+
         }
 
-        #region getters and setters papu
-               
-
-        public DateTime FechaEntrega
+        public DocumentoOficial archivoEvaluacion
         {
-            get
-            {
-                return fechaEntrega;
-            }
-
-            set
-            {
-                fechaEntrega = value;
-            }
+            get { return _archivoEvaluacion; }
+            set { _archivoEvaluacion = value; }
         }
-
-        public string RutaArchivo
-        {
-            get
-            {
-                return rutaArchivo;
-            }
-
-            set
-            {
-                rutaArchivo = value;
-            }
-        }
-
-        public DocumentoOficial ArchivoEvaluacion
-        {
-            get
-            {
-                return archivoEvaluacion;
-            }
-
-            set
-            {
-                archivoEvaluacion = value;
-            }
-        }
-        #endregion
     }
 }

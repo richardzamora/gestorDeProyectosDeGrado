@@ -212,7 +212,7 @@ namespace TrabajosDeGrado
 
         public void aprobarPropuesta(DocumentoOficial doc)
         {
-            documentosPropuesta.Last<DocumentoPropuesta>().Respuesta = doc;
+            documentosPropuesta.Last<DocumentoPropuesta>().respuesta = doc;
             this.estado = TrabajoDeGrado.DESARROLLO;
         }
 
@@ -225,12 +225,12 @@ namespace TrabajosDeGrado
         public void entregarDocumentoProrroga()
         {
             this.estado = TrabajoDeGrado.DESARROLLO;
-            documentosPropuesta.Last<DocumentoPropuesta>().FechaLimiteEntregaResultado.AddDays(20);
+            documentosPropuesta.Last<DocumentoPropuesta>().fechaFinal.AddDays(20);
         }
 
         public void aprobarDocumentoFinal(String mencion, DocumentoOficial doc)
         {
-            documentosFinales.Last<DocumentoFinal>().ArchivoEvaluacion = doc;
+            documentosFinales.Last<DocumentoFinal>().archivoEvaluacion = doc;
             this.mencion = mencion;
             this.estado = TrabajoDeGrado.FINALIZADA;
         }

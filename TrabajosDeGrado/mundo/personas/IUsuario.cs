@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajosDeGrado.mundo.personas
 {
-    public class Usuario
+    public class IUsuario
     {
 
         private string _nombre;
@@ -65,7 +65,8 @@ namespace TrabajosDeGrado.mundo.personas
                 _usuario = value;
             }
         }
-        public Usuario(string pNombre, string pApellido, string pUsuario, string pContraseña)
+
+        public IUsuario(string pNombre, string pApellido, string pUsuario, string pContraseña)
         {
             nombre = pNombre;
             apellido = pApellido;

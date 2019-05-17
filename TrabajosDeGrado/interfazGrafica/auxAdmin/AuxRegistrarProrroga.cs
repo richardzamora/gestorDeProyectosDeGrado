@@ -34,7 +34,7 @@ namespace TrabajosDeGrado
             {
                 if (tdg[i].DocumentosProrroga!=null)
                 {
-                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosProrroga.FechaEntrega);
+                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosProrroga.fechaFinal);
                 }
             }
         }
@@ -42,7 +42,7 @@ namespace TrabajosDeGrado
         private void aprobarProrroga()
         {
             tdg[seleccionado].entregarDocumentoProrroga();
-            MessageBox.Show("Se ha aprobado la propuesta. La fecha límite de entrega es: " + tdg[seleccionado].DocumentosPropuesta.Last<DocumentoPropuesta>().FechaLimiteEntregaResultado);
+            MessageBox.Show("Se ha aprobado la propuesta. La fecha límite de entrega es: " + tdg[seleccionado].DocumentosPropuesta.Last<DocumentoPropuesta>().fechaFinal);
         }
 
         private void btnSubir_Click(object sender, EventArgs e)

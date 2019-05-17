@@ -7,7 +7,7 @@ using TrabajosDeGrado.mundo.personas;
 
 namespace TrabajosDeGrado
 {
-    public class Jurado : Usuario
+    public class Jurado : IUsuario
     {
         public static String LIBRE = "Libre";
         public static String OCUPADO = "Ocupado";

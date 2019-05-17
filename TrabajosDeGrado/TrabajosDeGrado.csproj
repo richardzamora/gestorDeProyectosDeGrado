@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="mundo\documentos\IDocumento.cs" />
     <Compile Include="mundo\personas\AuxAdministrativo.cs" />
     <Compile Include="interfazGrafica\auxAdmin\AuxAsignarJurados.cs">
       <SubType>Form</SubType>
@@ -124,7 +125,7 @@
     <Compile Include="interfazGrafica\Seleccion.Designer.cs">
       <DependentUpon>Seleccion.cs</DependentUpon>
     </Compile>
-    <Compile Include="mundo\personas\Usuario.cs" />
+    <Compile Include="mundo\personas\IUsuario.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="mundo\documentos\DocumentoPropuesta.cs" />
