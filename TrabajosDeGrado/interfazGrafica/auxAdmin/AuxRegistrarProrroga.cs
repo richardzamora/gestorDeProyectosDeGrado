@@ -45,10 +45,12 @@ namespace TrabajosDeGrado
             MessageBox.Show("Se ha aprobado la propuesta. La fecha límite de entrega es: " + tdg[seleccionado].DocumentosPropuesta.Last<DocumentoPropuesta>().fechaFinal);
         }
 
-        private void btnSubir_Click(object sender, EventArgs e)
+        private void btnAprobar_Click(object sender, EventArgs e)
         {
             aprobarProrroga();
         }
+
+
         private void dgvTabla_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             seleccionado = e.RowIndex;

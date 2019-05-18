@@ -36,7 +36,7 @@ namespace TrabajosDeGrado
             ofdRuta.ShowDialog();
             txtRuta.Text = ofdRuta.FileName;
             ep.crearDocumentoPropuesta(txtTitulo.Text,txtRuta.Text,txtModalidad.Text,DateTime.Today);
-            MessageBox.Show("El documento se ha creado con exito, se deberá aprobar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
+            MessageBox.Show("El documento se ha creado con exito, se deberá aprobar antes del día: " + DateTime.Today.AddDays(20).Date.ToString());
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
