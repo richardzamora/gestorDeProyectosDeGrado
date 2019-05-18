@@ -12,13 +12,16 @@ namespace TrabajosDeGrado
 {
     public partial class EstudiantePrincipal : Form
     {
+        EstudiantePropuesta estugui;
         Estudiante logueado;
         SistemaDeInformacion s;
+        EstudiantePrincipal ep;
         public EstudiantePrincipal(Estudiante e)
         {
             InitializeComponent();
             logueado = e;
             s = SistemaDeInformacion.sistema;
+          
         }
 
         private void btnPropuesta_Click(object sender, EventArgs e)
@@ -91,6 +94,26 @@ namespace TrabajosDeGrado
         {
             EstudianteDocFinal edf = new EstudianteDocFinal(logueado, this);
             edf.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void propuestaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            estugui = new EstudiantePropuesta(logueado, ep);
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

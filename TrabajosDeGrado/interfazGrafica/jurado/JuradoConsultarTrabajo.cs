@@ -66,5 +66,10 @@ namespace TrabajosDeGrado
         {
             seleccionado = e.RowIndex;
         }
+
+        private void dgvTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

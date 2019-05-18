@@ -51,6 +51,9 @@ namespace TrabajosDeGrado
             return s.TotalJurados;
         }
 
-       
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -43,5 +43,20 @@ namespace TrabajosDeGrado
         {
 
         }
+
+        private void EstudiantePropuesta_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox4_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

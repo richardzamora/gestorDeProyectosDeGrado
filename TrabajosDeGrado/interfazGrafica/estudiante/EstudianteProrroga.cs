@@ -39,5 +39,10 @@ namespace TrabajosDeGrado
             ep.crearDocumentoProrroga("", txtRuta.Text, "", DateTime.Today);
             MessageBox.Show("El documento se ha enviado con exito, se deberá evaluar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

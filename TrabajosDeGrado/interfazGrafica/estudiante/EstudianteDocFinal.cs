@@ -39,5 +39,20 @@ namespace TrabajosDeGrado
             ep.crearDocumentoFinal("", txtRuta.Text, "", DateTime.Today);
             MessageBox.Show("El documento se ha creado con exito, se deberá evaluar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

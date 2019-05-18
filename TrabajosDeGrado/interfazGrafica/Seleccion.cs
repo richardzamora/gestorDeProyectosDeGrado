@@ -21,7 +21,7 @@ namespace TrabajosDeGrado
             s = SistemaDeInformacion.Sistema;
 
             s.añadirEstudiante("Richard", "Zamora", "2220171018", 5, "3183769455", "1234645197", false, "1234");
-            s.añadirEstudiante("Lina Vanessa", "Rincón Salazar", "2220191005", 6, "00000000", "1110581308", false, "1234");
+            s.añadirEstudiante("Lina Vanessa", "Salazar", "2220191005", 6, "00000000", "1110581308", false, "1234");
             s.añadirEstudiante("Exekielh", "Merstro Brunxstror", "2220151022", 7, "312432237", "1234653454", false, "1234");
 
             s.añadirAuxAdministrativo("Celeste", "Espinoza", "123456789", "1234");
@@ -57,6 +57,16 @@ namespace TrabajosDeGrado
             }
             
             MessageBox.Show("El usuario y/o la contraseña son incorrectos >:(");
+        }
+
+        private void Seleccion_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }
