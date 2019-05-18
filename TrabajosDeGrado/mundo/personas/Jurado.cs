@@ -7,6 +7,7 @@ using TrabajosDeGrado.mundo.personas;
 
 namespace TrabajosDeGrado
 {
+    [Serializable]
     public class Jurado : IUsuario
     {
         public static String LIBRE = "Libre";

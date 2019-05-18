@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajosDeGrado.mundo.documentos
 {
+    [Serializable]
     public class IDocumento
     {
         private string _codigo;

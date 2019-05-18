@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabajosDeGrado.mundo.personas
 {
+    [Serializable]
     public class IUsuario
     {
 

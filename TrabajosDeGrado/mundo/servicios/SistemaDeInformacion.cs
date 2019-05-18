@@ -1,14 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace TrabajosDeGrado
 {
+    [Serializable]
     public class SistemaDeInformacion
     {
-        public static SistemaDeInformacion sistema = new SistemaDeInformacion();
+        public static string FileName = @"../../../SavedSistemaInformacion.bin";
+
+        public static SistemaDeInformacion sistema = new SistemaDeInformacion(FileName);
         public static SistemaDeInformacion Sistema { get { return sistema; } }
 
         #region getters and setters
@@ -37,6 +42,28 @@ namespace TrabajosDeGrado
                 totalJurados = value;
             }
         }
+        public List<Estudiante> TotalEstudiantes
+        {
+            get
+            {
+                return totalEstudiantes;
+            }
+            set
+            {
+                totalEstudiantes = value;
+            }
+        }
+        public List<AuxAdministrativo> TotalAdministrativos
+        {
+            get
+            {
+                return totalAdministrativos;
+            }
+            set
+            {
+                totalAdministrativos = value;
+            }
+        }
         #endregion
 
         private List<Estudiante> totalEstudiantes;
@@ -50,8 +77,26 @@ namespace TrabajosDeGrado
             listaTrabajosDeGrado = new List<TrabajoDeGrado>();
             totalJurados = new List<Jurado>();
             totalAdministrativos = new List<AuxAdministrativo>();
+        }
 
-    }
+        public SistemaDeInformacion(string ruta)
+        {
+            SistemaDeInformacion data = cargarDatos(FileName);
+            if (data == null)
+            {
+                TotalEstudiantes = new List<Estudiante>();
+                ListaTrabajosDeGrado = new List<TrabajoDeGrado>();
+                TotalJurados = new List<Jurado>();
+                TotalAdministrativos = new List<AuxAdministrativo>();
+            }
+            else
+            {
+                TotalEstudiantes = data.TotalEstudiantes;
+                ListaTrabajosDeGrado = data.ListaTrabajosDeGrado;
+                TotalJurados = data.TotalJurados;
+                TotalAdministrativos = data.TotalAdministrativos;
+            }
+        }
         #region añadir personas
         public void añadirEstudiante(String pNombre, String pApellido, String pCodigo, int pSemeste, String pTelefono, String pCedula, Boolean pMulta, String pContraseña)
         {
@@ -159,6 +204,45 @@ namespace TrabajosDeGrado
             }
 
             return null;
+        }
+
+        public static void guardarDatos(SistemaDeInformacion sistemaInfo, String ruta)
+        {
+            Stream SaveFileStream = File.Create(FileName);
+            try
+            {
+                BinaryFormatter serializer = new BinaryFormatter();
+                serializer.Serialize(SaveFileStream, sistemaInfo);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Error al guardar datos");
+
+            }
+            SaveFileStream.Close();
+        }
+        public static SistemaDeInformacion cargarDatos(String ruta)
+        {
+            if (File.Exists(FileName))
+            {
+                Stream openFileStream = File.OpenRead(FileName);
+                try
+                {
+                    BinaryFormatter deserializer = new BinaryFormatter();
+                    SistemaDeInformacion sistemaInfo = (SistemaDeInformacion)deserializer.Deserialize(openFileStream);
+                    openFileStream.Close();
+                    return sistemaInfo;
+                }
+                catch
+                {
+                    openFileStream.Close();
+                    return null;
+                }
+            }
+            else
+            {
+                return null;
+            }
         }
 
     }

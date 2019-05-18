@@ -7,6 +7,7 @@ using TrabajosDeGrado.mundo.personas;
 
 namespace TrabajosDeGrado
 {
+    [Serializable]
     public class Estudiante : IUsuario
     {
  

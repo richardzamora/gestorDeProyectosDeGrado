@@ -7,6 +7,7 @@ using TrabajosDeGrado.mundo.documentos;
 
 namespace TrabajosDeGrado
 {
+    [Serializable]
     public class DocumentoProrroga : IDocumento
     {
 

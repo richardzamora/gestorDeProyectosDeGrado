@@ -7,6 +7,7 @@ using TrabajosDeGrado.mundo.personas;
 
 namespace TrabajosDeGrado
 {
+    [Serializable]
     public class AuxAdministrativo : IUsuario
     {
         public AuxAdministrativo(String pNombre, String pApellido, String pUsuario, String pContraseña)
