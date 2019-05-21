@@ -36,13 +36,19 @@ namespace TrabajosDeGrado
         {
             ofdRuta.ShowDialog();
             txtRuta.Text = ofdRuta.FileName;
-            ep.crearDocumentoProrroga("", txtRuta.Text, "", DateTime.Today);
-            MessageBox.Show("El documento se ha enviado con exito, se deberá evaluar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
         }
 
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            ep.crearDocumentoProrroga("", txtRuta.Text, "", DateTime.Today);
+            MessageBox.Show("El documento se ha enviado con éxito, se deberá evaluar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
+        }
+
+        #region Métodos no usados
         private void label1_Click(object sender, EventArgs e)
         {
 
         }
+        #endregion
     }
 }

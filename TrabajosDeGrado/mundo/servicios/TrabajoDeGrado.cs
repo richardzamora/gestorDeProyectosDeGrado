@@ -9,17 +9,14 @@ namespace TrabajosDeGrado
     [Serializable]
     public class TrabajoDeGrado
     {
-
         public static String APROBACION = "En espera de aprobación";
-        public static String DESARROLLO= "En proceso de desarrollo";
+        public static String DESARROLLO = "En proceso de desarrollo";
         public static String EVALUACION = "En proceso de evaluación";
-        public static String FINALIZADA= "finalizada con mención";
+        public static String FINALIZADA = "finalizada con mención";
         public static String CANCELADA = "En aprovacion";
 
         public static String LAUREADA = "Laureada";
         public static String MERITORIA = "Meritoria";
-        
-
 
         private String codigo;
         private String titulo;
@@ -192,7 +189,6 @@ namespace TrabajosDeGrado
         }
         #endregion
 
-
         public TrabajoDeGrado( Estudiante e,  String pTitulo, DateTime pFecha, String pTipoModalidad, DocumentoPropuesta dp)
         {
             estudiantes = new List<Estudiante>();
@@ -240,6 +236,5 @@ namespace TrabajosDeGrado
         {
             this.estado = TrabajoDeGrado.CANCELADA;
         }
-
     }
 }

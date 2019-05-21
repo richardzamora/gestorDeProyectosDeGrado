@@ -14,6 +14,7 @@ namespace TrabajosDeGrado
     {
         Estudiante logueado;
         EstudiantePrincipal ep;
+
         public EstudiantePropuesta(Estudiante e, EstudiantePrincipal ep)
         {
             logueado = e;
@@ -35,10 +36,29 @@ namespace TrabajosDeGrado
         {
             ofdRuta.ShowDialog();
             txtRuta.Text = ofdRuta.FileName;
-            ep.crearDocumentoPropuesta(txtTitulo.Text,txtRuta.Text,txtModalidad.Text,DateTime.Today);
-            MessageBox.Show("El documento se ha creado con exito, se deberá aprobar antes del día: " + DateTime.Today.AddDays(20).Date.ToString());
         }
 
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
+            if (txtTitulo.Text.Equals(""))
+            {
+                MessageBox.Show("La propuesta necesita un título.\nPor favor complete el campo Título de propuesta y vuelva a intentarlo.");
+            }
+            else
+            {
+                if (comboBoxModalidad.Text.Equals("Modalidades"))
+                {
+                    MessageBox.Show("Es necesario elegir una modalidad para su propuesta.");
+                }
+                else
+                {
+                    ep.crearDocumentoPropuesta(txtTitulo.Text, txtRuta.Text, comboBoxModalidad.Text, DateTime.Today.Date);
+                    MessageBox.Show("El documento se ha creado con exito, se deberá aprobar antes del día: " + DateTime.Today.Date.AddDays(20).Date.ToString());
+                }
+            }
+        }
+
+        #region Métodos no usados
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
         {
 
@@ -58,5 +78,6 @@ namespace TrabajosDeGrado
         {
 
         }
+        #endregion
     }
 }

@@ -8,20 +8,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using TrabajosDeGrado.mundo.documentos;
+
 namespace TrabajosDeGrado
 {
     public partial class EstudiantePrincipal : Form
     {
-        EstudiantePropuesta estugui;
         Estudiante logueado;
-        SistemaDeInformacion s;
-        EstudiantePrincipal ep;
+        SistemaDeInformacion sistema;
+
         public EstudiantePrincipal(Estudiante e)
         {
             InitializeComponent();
             logueado = e;
-            s = SistemaDeInformacion.sistema;
-          
+            sistema = SistemaDeInformacion.sistema;
         }
 
         private void btnPropuesta_Click(object sender, EventArgs e)
@@ -30,52 +30,48 @@ namespace TrabajosDeGrado
             ep.Show();
         }
 
-        public List<DocumentoPropuesta> obtenerDocumentosPropuesta()
+        private void btnProrroga_Click(object sender, EventArgs e)
         {
-            for(int i = 0; i < s.ListaTrabajosDeGrado.Count(); i++)
+            List<DocumentoPropuesta> propuestas = obtenerDocumentosPropuesta();
+
+            if(propuestas == null)
             {
-                for (int j = 0; j < s.ListaTrabajosDeGrado.Count(); j++)
-                {
-                    if (s.ListaTrabajosDeGrado[i].Estudiantes[j] == logueado)
-                    {
-                        return s.ListaTrabajosDeGrado[i].DocumentosPropuesta;
-                    }
-                }   
+                MessageBox.Show("Aun no se han registrado propuestas");
             }
-
-            return null;
-            
-        }
-
-        public void crearDocumentoFinal(String titulo, String ruta, String modalidad, DateTime fecha)
-        {
-            s.crearDocumentoFinal(logueado, titulo, ruta, modalidad, fecha);
-        }
-
-        public void crearDocumentoProrroga(String titulo, String ruta, String modalidad, DateTime fecha)
-        {
-            s.crearDocumentoProrroga(logueado, titulo, ruta, modalidad, fecha);
-        }
-
-        public List<DocumentoFinal> obtenerDocumentosFinales()
-        {
-            for (int i = 0; i < s.ListaTrabajosDeGrado.Count(); i++)
+            else
             {
-                for (int j = 0; j < s.ListaTrabajosDeGrado.Count(); j++)
+                if (!propuestas[propuestas.Count - 1].estado.Equals(IDocumento.APROBADO))
                 {
-                    if (s.ListaTrabajosDeGrado[i].Estudiantes[j] == logueado)
-                    {
-                        return s.ListaTrabajosDeGrado[i].DocumentosFinales;
-                    }
+                    MessageBox.Show("La propuesta enviada aun no ha sido aprobada.");
+                }
+                else
+                {
+                    EstudianteProrroga ep = new EstudianteProrroga(logueado, this);
+                    ep.Show();
+                }
+            }  
+        }
+
+        private void btnDocFinal_Click(object sender, EventArgs e)
+        {
+            List<DocumentoPropuesta> propuestas = obtenerDocumentosPropuesta();
+
+            if (propuestas == null)
+            {
+                MessageBox.Show("Aun no se han registrado propuestas");
+            }
+            else
+            {
+                if (!propuestas[propuestas.Count - 1].estado.Equals(IDocumento.APROBADO))
+                {
+                    MessageBox.Show("La propuesta enviada aun no ha sido aprobada.");
+                }
+                else
+                {
+                    EstudianteDocFinal edf = new EstudianteDocFinal(logueado, this);
+                    edf.Show();
                 }
             }
-
-            return null;
-        }
-
-        public void crearDocumentoPropuesta(String titulo, String ruta, String modalidad, DateTime fecha)
-        {
-            s.crearDocumentoPropuesta(logueado,titulo, ruta, modalidad,fecha);            
         }
 
         private void btnEstado_Click(object sender, EventArgs e)
@@ -84,31 +80,53 @@ namespace TrabajosDeGrado
             ee.Show();
         }
 
-        private void btnProrroga_Click(object sender, EventArgs e)
+        public List<DocumentoPropuesta> obtenerDocumentosPropuesta()
         {
-            EstudianteProrroga ep = new EstudianteProrroga(logueado, this);
-            ep.Show();
+            for(int i = 0; i < sistema.ListaTrabajosDeGrado.Count(); i++)
+            {
+                List<Estudiante> estudiantes = sistema.ListaTrabajosDeGrado[i].Estudiantes;
+                for (int j = 0; j < estudiantes.Count; j++)
+                {
+                    if (sistema.ListaTrabajosDeGrado[i].Estudiantes[j] == logueado)
+                    {
+                        return sistema.ListaTrabajosDeGrado[i].DocumentosPropuesta;
+                    }
+                }   
+            }
+
+            return null; 
         }
 
-        private void btnDocFinal_Click(object sender, EventArgs e)
+        public List<DocumentoFinal> obtenerDocumentosFinales()
         {
-            EstudianteDocFinal edf = new EstudianteDocFinal(logueado, this);
-            edf.Show();
+            for (int i = 0; i < sistema.ListaTrabajosDeGrado.Count(); i++)
+            {
+                List<Estudiante> estudiantes = sistema.ListaTrabajosDeGrado[i].Estudiantes;
+                for (int j = 0; j < estudiantes.Count; j++)
+                {
+                    if (sistema.ListaTrabajosDeGrado[i].Estudiantes[j] == logueado)
+                    {
+                        return sistema.ListaTrabajosDeGrado[i].DocumentosFinales;
+                    }
+                }
+            }
+
+            return null;
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        public void crearDocumentoFinal(String titulo, String ruta, String modalidad, DateTime fecha)
         {
-
+            sistema.crearDocumentoFinal(logueado, titulo, ruta, modalidad, fecha);
         }
 
-        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        public void crearDocumentoProrroga(String titulo, String ruta, String modalidad, DateTime fecha)
         {
-
+            sistema.crearDocumentoProrroga(logueado, titulo, ruta, modalidad, fecha);
         }
 
-        private void propuestaToolStripMenuItem_Click(object sender, EventArgs e)
+        public void crearDocumentoPropuesta(String titulo, String ruta, String modalidad, DateTime fecha)
         {
-            estugui = new EstudiantePropuesta(logueado, ep);
+            sistema.crearDocumentoPropuesta(logueado,titulo, ruta, modalidad,fecha);            
         }
 
         private void groupBox1_Enter(object sender, EventArgs e)

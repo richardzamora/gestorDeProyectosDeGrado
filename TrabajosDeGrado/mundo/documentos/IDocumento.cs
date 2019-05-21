@@ -9,10 +9,10 @@ namespace TrabajosDeGrado.mundo.documentos
     [Serializable]
     public class IDocumento
     {
-        public const string APROBADO = "aprobado";
-        public const string DEVUELTO_PARA_CORRECCIONES = "devuelto";
-        public const string RECHAZADO = "rechazada";
-        public const string EN_ESPERA = "espera"; 
+        public const string APROBADO = "Aprobado";
+        public const string DEVUELTO_PARA_CORRECCIONES = "Devuelto para correcciones";
+        public const string RECHAZADO = "Rechazada";
+        public const string EN_ESPERA = "En espera de evalucación"; 
 
         private string _codigo;
         private string _ruta;
@@ -27,7 +27,6 @@ namespace TrabajosDeGrado.mundo.documentos
             fechaInicio = pFechaInicio;
             fechaFinal = pFechaFinal;
             estado = IDocumento.EN_ESPERA;
-
         }
 
         public string codigo

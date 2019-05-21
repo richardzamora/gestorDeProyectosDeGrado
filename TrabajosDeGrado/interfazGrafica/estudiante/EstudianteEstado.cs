@@ -9,16 +9,18 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TrabajosDeGrado;
 
+using TrabajosDeGrado.mundo.documentos;
+
 namespace TrabajosDeGrado
 {
     public partial class EstudianteEstado : Form
     {
         Estudiante logueado;
-        EstudiantePrincipal ep;
+        EstudiantePrincipal principal;
 
         public EstudianteEstado(Estudiante e, EstudiantePrincipal ep)
         {
-            this.ep = ep;
+            this.principal = ep;
             logueado = e;
             InitializeComponent();
             llenarTabla();
@@ -27,36 +29,33 @@ namespace TrabajosDeGrado
 
         private void llenarTabla()
         {
-            List<DocumentoPropuesta> propuestas = ep.obtenerDocumentosPropuesta();
-            List<DocumentoFinal> finales = ep.obtenerDocumentosFinales();
+            List<DocumentoPropuesta> propuestas = principal.obtenerDocumentosPropuesta();
+            List<DocumentoFinal> finales = principal.obtenerDocumentosFinales();
 
-            for (int i = 0; i < propuestas.Count; i++)
+            if (propuestas == null)
             {
-                if(propuestas[i].respuesta == null)
-                {
-                    dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio,"Sin aprobar");
-                }
-                else
-                {
-                    dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio, propuestas[i].respuesta.RutaArchivo);
-                }
-                    
+                MessageBox.Show("No se han registrado aun propuestas");
             }
-
-            for (int i = 0; i < finales.Count; i++)
+            else
             {
-                if (finales[i].archivoEvaluacion == null)
+                for (int i = 0; i < propuestas.Count; i++)
                 {
-                    dgvTabla.Rows.Add("Trabajo Final", finales[i].fechaFinal, "Sin evaluar");
+                    if (propuestas[i].estado.Equals(IDocumento.EN_ESPERA))
+                    {
+                        dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio, "En espera", propuestas[i].estado);
+                    }
+                    else
+                    {
+                        dgvTabla.Rows.Add("Propuesta", propuestas[i].fechaInicio, propuestas[i].fechaFinal, propuestas[i].estado);
+                    }
                 }
-                else
+
+                for (int i = 0; i < finales.Count; i++)
                 {
-                    dgvTabla.Rows.Add("Trabajo Final", finales[i].fechaFinal, finales[i].archivoEvaluacion.RutaArchivo);
+                    dgvTabla.Rows.Add("Trabajo Final", finales[i].fechaInicio, finales[i].fechaFinal, finales[i].estado);
                 }
-                
             }
         }
-
 
         private void btnVolver_Click(object sender, EventArgs e)
         {

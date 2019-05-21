@@ -97,6 +97,7 @@ namespace TrabajosDeGrado
                 TotalAdministrativos = data.TotalAdministrativos;
             }
         }
+
         #region añadir personas
         public void añadirEstudiante(String pNombre, String pApellido, String pCodigo, int pSemeste, String pTelefono, String pCedula, Boolean pMulta, String pContraseña)
         {
@@ -164,12 +165,11 @@ namespace TrabajosDeGrado
         }
         #endregion
 
-        public void crearDocumentoPropuesta(Estudiante e, String titulo, String ruta, String modalidad, DateTime fecha)
+        public void crearDocumentoPropuesta(Estudiante estudiante, String titulo, String ruta, String modalidad, DateTime fecha)
         {
-            DocumentoPropuesta dp = new DocumentoPropuesta(fecha.ToString(), ruta,fecha, fecha.AddDays(20));
-            TrabajoDeGrado tg = new TrabajoDeGrado(e,titulo, fecha, modalidad, dp);
-            listaTrabajosDeGrado.Add(tg);
-           
+            DocumentoPropuesta propuesta = new DocumentoPropuesta(fecha.ToString(), ruta,fecha, fecha.AddDays(20));
+            TrabajoDeGrado trabajoDeGrado = new TrabajoDeGrado(estudiante, titulo, fecha, modalidad, propuesta);
+            listaTrabajosDeGrado.Add(trabajoDeGrado); 
         }
 
         public void crearDocumentoFinal(Estudiante e, String titulo, String ruta, String modalidad, DateTime fecha)
@@ -221,6 +221,7 @@ namespace TrabajosDeGrado
             }
             SaveFileStream.Close();
         }
+
         public static SistemaDeInformacion cargarDatos(String ruta)
         {
             if (File.Exists(FileName))

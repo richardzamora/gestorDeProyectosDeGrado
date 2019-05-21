@@ -32,13 +32,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dgvTabla = new System.Windows.Forms.DataGridView();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.documentoOficial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FechaEnvio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabla)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -72,40 +73,23 @@
             this.dgvTabla.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabla.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Tipo,
+            this.FechaEnvio,
             this.fechaEntrega,
-            this.documentoOficial});
+            this.Estado});
             this.dgvTabla.Location = new System.Drawing.Point(29, 245);
             this.dgvTabla.Name = "dgvTabla";
             this.dgvTabla.ReadOnly = true;
             this.dgvTabla.Size = new System.Drawing.Size(668, 174);
             this.dgvTabla.TabIndex = 37;
             // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            this.Tipo.ReadOnly = true;
-            // 
-            // fechaEntrega
-            // 
-            this.fechaEntrega.HeaderText = "Fecha de entrega";
-            this.fechaEntrega.Name = "fechaEntrega";
-            this.fechaEntrega.ReadOnly = true;
-            // 
-            // documentoOficial
-            // 
-            this.documentoOficial.HeaderText = "Documento Oficial";
-            this.documentoOficial.Name = "documentoOficial";
-            this.documentoOficial.ReadOnly = true;
-            // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.MidnightBlue;
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(58, -1);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(664, 64);
             this.groupBox1.TabIndex = 40;
             this.groupBox1.TabStop = false;
@@ -114,9 +98,9 @@
             // 
             this.groupBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("groupBox2.BackgroundImage")));
             this.groupBox2.Location = new System.Drawing.Point(0, 63);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(723, 130);
             this.groupBox2.TabIndex = 41;
             this.groupBox2.TabStop = false;
@@ -126,9 +110,9 @@
             this.groupBox3.BackColor = System.Drawing.Color.MidnightBlue;
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Location = new System.Drawing.Point(0, 190);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(723, 56);
             this.groupBox3.TabIndex = 42;
             this.groupBox3.TabStop = false;
@@ -145,6 +129,30 @@
             this.label2.TabIndex = 43;
             this.label2.Text = "HISTORIAL";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // Tipo
+            // 
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
+            this.Tipo.ReadOnly = true;
+            // 
+            // FechaEnvio
+            // 
+            this.FechaEnvio.HeaderText = "Fecha de envío";
+            this.FechaEnvio.Name = "FechaEnvio";
+            this.FechaEnvio.ReadOnly = true;
+            // 
+            // fechaEntrega
+            // 
+            this.fechaEntrega.HeaderText = "Fecha de entrega / respuesta";
+            this.fechaEntrega.Name = "fechaEntrega";
+            this.fechaEntrega.ReadOnly = true;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
             // 
             // EstudianteEstado
             // 
@@ -173,12 +181,13 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.DataGridView dgvTabla;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechaEntrega;
-        private System.Windows.Forms.DataGridViewTextBoxColumn documentoOficial;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FechaEnvio;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaEntrega;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }

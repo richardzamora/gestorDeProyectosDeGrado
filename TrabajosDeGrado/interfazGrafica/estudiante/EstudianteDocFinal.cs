@@ -36,10 +36,15 @@ namespace TrabajosDeGrado
         {
             ofdRuta.ShowDialog();
             txtRuta.Text = ofdRuta.FileName;
+            }
+
+        private void btnEnviar_Click(object sender, EventArgs e)
+        {
             ep.crearDocumentoFinal("", txtRuta.Text, "", DateTime.Today);
-            MessageBox.Show("El documento se ha creado con exito, se deberá evaluar antes del día" + DateTime.Today.AddDays(20).Date.ToString());
+            MessageBox.Show("El documento se ha creado con exito, se deberá evaluar antes del día: " + DateTime.Today.AddDays(20).Date.ToString());
         }
 
+        #region Métodos no usados
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -54,5 +59,6 @@ namespace TrabajosDeGrado
         {
 
         }
+        #endregion       
     }
 }
