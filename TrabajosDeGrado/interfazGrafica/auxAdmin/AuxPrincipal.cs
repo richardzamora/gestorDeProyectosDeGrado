@@ -13,12 +13,25 @@ namespace TrabajosDeGrado
     public partial class AuxPrincipal : Form
     {
         AuxAdministrativo logueado;
-        SistemaDeInformacion s; 
+        SistemaDeInformacion sistema;
+         
         public AuxPrincipal(AuxAdministrativo a)
         {
             InitializeComponent();
             logueado = a;
-            s = SistemaDeInformacion.sistema;
+            sistema = SistemaDeInformacion.sistema;
+        }
+
+        public List<TrabajoDeGrado> listaDeTrabajos()
+        {
+            List<TrabajoDeGrado> tdg = sistema.ListaTrabajosDeGrado;
+
+            return tdg;
+        }
+
+        public List<Jurado> listaJurados()
+        {
+            return sistema.TotalJurados;
         }
 
         private void btnPropuestaAux_Click(object sender, EventArgs e)
@@ -27,28 +40,16 @@ namespace TrabajosDeGrado
             arp.Show();
         }
 
-        public List<TrabajoDeGrado> listaDeTrabajos()
+        private void btnAsignaciónJur_Click(object sender, EventArgs e)
         {
-            List<TrabajoDeGrado> tdg = s.ListaTrabajosDeGrado;
-
-            return tdg;
+            AuxAsignarJurados aaj = new AuxAsignarJurados(logueado, this);
+            aaj.Show();
         }
 
         private void btnProrrogaAux_Click(object sender, EventArgs e)
         {
             AuxRegistrarProrroga arp = new AuxRegistrarProrroga(logueado, this);
             arp.Show();
-        }
-
-        private void btnAsignaciónJur_Click(object sender, EventArgs e)
-        {
-            AuxAsignarJurados aaj = new AuxAsignarJurados(logueado,this);
-            aaj.Show();
-        }
-
-        public List<Jurado> listaJurados()
-        {
-            return s.TotalJurados;
         }
 
         private void label1_Click(object sender, EventArgs e)

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using TrabajosDeGrado.mundo.documentos;
+
 namespace TrabajosDeGrado
 {
     [Serializable]
@@ -206,14 +208,30 @@ namespace TrabajosDeGrado
             estado = TrabajoDeGrado.APROBACION;
         }
 
-
+        #region Opciones propuesta
         public void aprobarPropuesta(DocumentoOficial doc)
         {
-            documentosPropuesta.Last<DocumentoPropuesta>().respuesta = doc;
+            DocumentoPropuesta propuesta = documentosPropuesta.Last<DocumentoPropuesta>();
+            propuesta.respuesta = doc;
+            propuesta.estado = IDocumento.APROBADO;
             this.estado = TrabajoDeGrado.DESARROLLO;
         }
 
-              
+        public void devolverPropuesta(DocumentoOficial doc)
+        {
+            DocumentoPropuesta propuesta = documentosPropuesta.Last<DocumentoPropuesta>();
+            propuesta.respuesta = doc;
+            propuesta.estado = IDocumento.DEVUELTO_PARA_CORRECCIONES;
+        }
+
+        public void rechazarPropuesta(DocumentoOficial doc)
+        {
+            DocumentoPropuesta propuesta = documentosPropuesta.Last<DocumentoPropuesta>();
+            propuesta.respuesta = doc;
+            propuesta.estado = IDocumento.RECHAZADO;
+        }
+        #endregion
+
         public void entregarDocumentoFinal()
         {
             this.estado = TrabajoDeGrado.EVALUACION;
@@ -230,6 +248,13 @@ namespace TrabajosDeGrado
             documentosFinales.Last<DocumentoFinal>().archivoEvaluacion = doc;
             this.mencion = mencion;
             this.estado = TrabajoDeGrado.FINALIZADA;
+        }
+
+        public void devolverDocumentoFinal(DocumentoOficial doc)
+        {
+            documentosFinales.Last<DocumentoFinal>().archivoEvaluacion = doc;
+            this.mencion = IDocumento.DEVUELTO_PARA_CORRECCIONES;
+            this.estado = TrabajoDeGrado.DESARROLLO;
         }
 
         public void reprobarDocumentoProrroga()

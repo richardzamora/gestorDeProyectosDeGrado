@@ -46,13 +46,13 @@ namespace TrabajosDeGrado
             }
             else
             {
-                if (comboBoxModalidad.Text.Equals("Modalidades"))
+                if (comboBoxModalidad.Text.Equals(""))
                 {
                     MessageBox.Show("Es necesario elegir una modalidad para su propuesta.");
                 }
                 else
                 {
-                    ep.crearDocumentoPropuesta(txtTitulo.Text, txtRuta.Text, comboBoxModalidad.Text, DateTime.Today.Date);
+                    ep.crearDocumentoPropuesta(txtTitulo.Text, txtRuta.Text, comboBoxModalidad.Text, DateTime.Now);
                     MessageBox.Show("El documento se ha creado con exito, se deberá aprobar antes del día: " + DateTime.Today.Date.AddDays(20).Date.ToString());
                 }
             }

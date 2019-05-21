@@ -194,7 +194,8 @@ namespace TrabajosDeGrado
         {
             for (int i = 0; i < listaTrabajosDeGrado.Count(); i++)
             {
-                for (int j = 0; j <listaTrabajosDeGrado.Count(); j++)
+                List<Estudiante> estudiantes = sistema.ListaTrabajosDeGrado[i].Estudiantes;
+                for (int j = 0; j < estudiantes.Count; j++)
                 {
                     if ( listaTrabajosDeGrado[i].Estudiantes[j] == e)
                     {
@@ -245,6 +246,5 @@ namespace TrabajosDeGrado
                 return null;
             }
         }
-
     }
 }

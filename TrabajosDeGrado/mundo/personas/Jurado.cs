@@ -82,7 +82,5 @@ namespace TrabajosDeGrado
             telefono = pTelefono;
             estado = Jurado.LIBRE;
         }
-
-    
     }
 }

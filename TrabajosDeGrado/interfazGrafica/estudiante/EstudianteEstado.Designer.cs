@@ -141,18 +141,21 @@
             this.FechaEnvio.HeaderText = "Fecha de envío";
             this.FechaEnvio.Name = "FechaEnvio";
             this.FechaEnvio.ReadOnly = true;
+            this.FechaEnvio.Width = 150;
             // 
             // fechaEntrega
             // 
             this.fechaEntrega.HeaderText = "Fecha de entrega / respuesta";
             this.fechaEntrega.Name = "fechaEntrega";
             this.fechaEntrega.ReadOnly = true;
+            this.fechaEntrega.Width = 150;
             // 
             // Estado
             // 
             this.Estado.HeaderText = "Estado";
             this.Estado.Name = "Estado";
             this.Estado.ReadOnly = true;
+            this.Estado.Width = 150;
             // 
             // EstudianteEstado
             // 

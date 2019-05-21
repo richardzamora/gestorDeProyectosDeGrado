@@ -40,7 +40,7 @@ namespace TrabajosDeGrado
 
         private void btnEnviar_Click(object sender, EventArgs e)
         {
-            ep.crearDocumentoFinal("", txtRuta.Text, "", DateTime.Today);
+            ep.crearDocumentoFinal("", txtRuta.Text, "", DateTime.Now);
             MessageBox.Show("El documento se ha creado con exito, se deberá evaluar antes del día: " + DateTime.Today.AddDays(20).Date.ToString());
         }
 

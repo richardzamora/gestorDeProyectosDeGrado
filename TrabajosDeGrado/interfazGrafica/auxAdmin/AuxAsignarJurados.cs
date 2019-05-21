@@ -28,8 +28,8 @@ namespace TrabajosDeGrado
             InitializeComponent();
             llenarTablaJurados();
             llenarTabla();
-            int seleccionado = 0;
-            int seleccionadoJurado = 0;
+            seleccionado = 0;
+            seleccionadoJurado = 0;
         }
 
         private void llenarTabla()
@@ -38,9 +38,9 @@ namespace TrabajosDeGrado
 
             for (int i = 0; i < tdg.Count; i++)
             {
-                if (tdg[i].DocumentosFinales.Count>0)
+                if (tdg[i].DocumentosFinales.Count > 0)
                 {
-                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosProrroga.fechaFinal);
+                    dgvTabla.Rows.Add(tdg[i].Estudiantes[0].nombre+" "+ tdg[i].Estudiantes[0].apellido, tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosFinales.Last<DocumentoFinal>().estado);
                 }
             }
         }
@@ -61,7 +61,7 @@ namespace TrabajosDeGrado
         public void asignarJurados()
         {
             tdg[seleccionado].JuradosAsignados.Add(jurados[seleccionadoJurado]);
-            MessageBox.Show("Se ha asignado el jurado "+ jurados[seleccionadoJurado].nombre + jurados[seleccionadoJurado].apellido + " al trabajo de grado satisfactoriamente");
+            MessageBox.Show("Se ha asignado el jurado "+ jurados[seleccionadoJurado].nombre + jurados[seleccionadoJurado].apellido + " al trabajo de grado "+tdg[seleccionado].Codigo+" satisfactoriamente");
         }
 
         private void btnSubir_Click(object sender, EventArgs e)

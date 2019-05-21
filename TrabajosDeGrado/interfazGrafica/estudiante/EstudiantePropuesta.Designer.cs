@@ -52,8 +52,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.btnEnviar = new System.Windows.Forms.Button();
             this.comboBoxModalidad = new System.Windows.Forms.ComboBox();
+            this.btnEnviar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -298,17 +298,6 @@
             this.groupBox4.Text = "Datos de la propuesta";
             this.groupBox4.Enter += new System.EventHandler(this.groupBox4_Enter);
             // 
-            // btnEnviar
-            // 
-            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnviar.Location = new System.Drawing.Point(523, 58);
-            this.btnEnviar.Name = "btnEnviar";
-            this.btnEnviar.Size = new System.Drawing.Size(153, 33);
-            this.btnEnviar.TabIndex = 15;
-            this.btnEnviar.Text = "Enviar propuesta";
-            this.btnEnviar.UseVisualStyleBackColor = true;
-            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
-            // 
             // comboBoxModalidad
             // 
             this.comboBoxModalidad.FormattingEnabled = true;
@@ -321,7 +310,17 @@
             this.comboBoxModalidad.Name = "comboBoxModalidad";
             this.comboBoxModalidad.Size = new System.Drawing.Size(151, 21);
             this.comboBoxModalidad.TabIndex = 16;
-            this.comboBoxModalidad.Text = "Modalidades";
+            // 
+            // btnEnviar
+            // 
+            this.btnEnviar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEnviar.Location = new System.Drawing.Point(523, 58);
+            this.btnEnviar.Name = "btnEnviar";
+            this.btnEnviar.Size = new System.Drawing.Size(153, 33);
+            this.btnEnviar.TabIndex = 15;
+            this.btnEnviar.Text = "Enviar propuesta";
+            this.btnEnviar.UseVisualStyleBackColor = true;
+            this.btnEnviar.Click += new System.EventHandler(this.btnEnviar_Click);
             // 
             // EstudiantePropuesta
             // 

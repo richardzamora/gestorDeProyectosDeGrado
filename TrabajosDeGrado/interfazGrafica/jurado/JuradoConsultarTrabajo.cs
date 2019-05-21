@@ -34,32 +34,56 @@ namespace TrabajosDeGrado
 
             for (int i = 0; i < tdg.Count; i++)
             {
-                for(int j = 0; j< tdg[i].JuradosAsignados.Count; j++)
+                for(int j = 0; j < tdg[i].JuradosAsignados.Count; j++)
                 {
                     if (tdg[i].JuradosAsignados[j].Equals(logueado)) 
                     {
-                        dgvTabla.Rows.Add(tdg[i].Estudiantes[0], tdg[i].Codigo, tdg[i].Titulo, tdg[i].DocumentosFinales.Last<DocumentoFinal>().fechaFinal);
+                        dgvTabla.Rows.Add(tdg[i].Estudiantes[0].nombre+" "+ tdg[i].Estudiantes[0].apellido, tdg[i].Codigo, tdg[i].Titulo, ""+tdg[i].DocumentosFinales.Last<DocumentoFinal>().fechaFinal);
                     }
                 }
                 
             }
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void aprobarTrabajoFinal()
         {
-            DocumentoOficial doc = new DocumentoOficial(DateTime.Today);
-            tdg[seleccionado].aprobarDocumentoFinal(txtMencion.Text, doc);
-            MessageBox.Show("Se ha aprobado el trabajo. El documento oficial se encuentra en " + doc.RutaArchivo);
+            DocumentoOficial doc = new DocumentoOficial(DateTime.Now);
+            if(comboBoxMencion.Text.Equals(""))
+            {
+                MessageBox.Show("Es necesario registrar una mención");
+            }
+            else
+            {
+                tdg[seleccionado].aprobarDocumentoFinal(comboBoxMencion.Text, doc);
+                MessageBox.Show("Se ha aprobado el trabajo. El documento oficial se encuentra en " + doc.RutaArchivo);
+            }
         }
 
+        private void devolverParaCorrecciones()
+        {
+            DocumentoOficial doc = new DocumentoOficial(DateTime.Now);
+            if (comboBoxMencion.Text.Equals(""))
+            {
+                MessageBox.Show("Es necesario registrar una mención");
+            }
+            else
+            {
+                tdg[seleccionado].aprobarDocumentoFinal(comboBoxMencion.Text, doc);
+                MessageBox.Show("Se ha aprobado el trabajo. El documento oficial se encuentra en " + doc.RutaArchivo);
+            }
+        }
 
         private void btnCalificar_Click_1(object sender, EventArgs e)
         {
-            aprobarTrabajoFinal();
+            if (comboBoxMencion.Text.Equals("Devolver para correcciones"))
+            {
+                devolverParaCorrecciones();
+            }
+            else
+            {
+                aprobarTrabajoFinal();
+            }
         }
 
         private void dgvTabla_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -68,6 +92,11 @@ namespace TrabajosDeGrado
         }
 
         private void dgvTabla_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
