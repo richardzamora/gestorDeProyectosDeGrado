@@ -15,7 +15,7 @@ namespace TrabajosDeGrado
         public static String DESARROLLO = "En proceso de desarrollo";
         public static String EVALUACION = "En proceso de evaluación";
         public static String FINALIZADA = "finalizada con mención";
-        public static String CANCELADA = "En aprovacion";
+        public static String CANCELADA = "En aprobacion";
 
         public static String LAUREADA = "Laureada";
         public static String MERITORIA = "Meritoria";

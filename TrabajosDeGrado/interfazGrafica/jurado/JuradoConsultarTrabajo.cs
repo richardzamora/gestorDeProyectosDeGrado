@@ -38,7 +38,7 @@ namespace TrabajosDeGrado
                 {
                     if (tdg[i].JuradosAsignados[j].Equals(logueado)) 
                     {
-                        dgvTabla.Rows.Add(tdg[i].Estudiantes[0].nombre+" "+ tdg[i].Estudiantes[0].apellido, tdg[i].Codigo, tdg[i].Titulo, ""+tdg[i].DocumentosFinales.Last<DocumentoFinal>().fechaFinal);
+                        dgvTabla.Rows.Add(tdg[i].Estudiantes[0].nombre+" "+ tdg[i].Estudiantes[0].apellido, tdg[i].Codigo, tdg[i].Titulo, "En proceso de construcción"/*+tdg[i].DocumentosFinales.Last<DocumentoFinal>().fechaFinal*/);
                     }
                 }
                 

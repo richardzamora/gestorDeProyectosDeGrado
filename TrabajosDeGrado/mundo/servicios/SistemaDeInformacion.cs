@@ -111,9 +111,9 @@ namespace TrabajosDeGrado
             totalAdministrativos.Add(a);
         }
 
-        public void añadirJurado(String pNombre, String pApellido, String pCodigo, int pnumeroTajetaProfecional, String pTelefono, String pContraseña)
+        public void añadirJurado(String pNombre, String pApellido, String pCodigo, int pnumeroTajetaProfesional, String pTelefono, String pContraseña)
         {
-            Jurado j = new Jurado(pNombre, pApellido, pCodigo, pnumeroTajetaProfecional, pTelefono, pContraseña);
+            Jurado j = new Jurado(pNombre, pApellido, pCodigo, pnumeroTajetaProfesional, pTelefono, pContraseña);
             totalJurados.Add(j);
         }
         #endregion
