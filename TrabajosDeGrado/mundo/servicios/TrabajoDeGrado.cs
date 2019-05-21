@@ -247,6 +247,7 @@ namespace TrabajosDeGrado
         {
             documentosFinales.Last<DocumentoFinal>().archivoEvaluacion = doc;
             this.mencion = mencion;
+            documentosFinales.Last<DocumentoFinal>().estado = mencion;
             this.estado = TrabajoDeGrado.FINALIZADA;
         }
 

@@ -56,7 +56,7 @@ namespace TrabajosDeGrado
             else
             {
                 tdg[seleccionado].aprobarDocumentoFinal(comboBoxMencion.Text, doc);
-                MessageBox.Show("Se ha aprobado el trabajo. El documento oficial se encuentra en " + doc.RutaArchivo);
+                MessageBox.Show("Se ha aprobado el trabajo. con la mencion: "+comboBoxMencion.Text+" El documento oficial se encuentra en " + doc.RutaArchivo);
             }
         }
 
